@@ -1,5 +1,7 @@
 # Ex02-Outlier
 
+# AIM:
+
 You are given bhp.csv which contains property prices in the city of banglore, India. You need to examine price_per_sqft column and do following,
 
 (1) Remove outliers using IQR 
@@ -14,6 +16,21 @@ You are given bhp.csv which contains property prices in the city of banglore, In
 
     (ii) Using IQR, detect height outliers and print them
     
+# ALGORITHM:
+## STEP1:
+import the required packages(pandas,numpy,scipy)
+## STEP2:
+read the csv file.
+## STEP3:
+convert the file into dataframe and get the information of the data.
+## STEP4:
+remove the outliers in the data set using z scores method.
+## STEP5:
+check if the iutliers are removed from data set using graphiv=calmethods.
+## STEP6:
+save the final data set into the file.
+
+# PROGRAM:
 ```
 DEVELOPED BY: HARISH RAGAVENDRA S
 REFERENCE NO: 212222230045
@@ -67,6 +84,8 @@ df_fil=df[((df<=high)&(df>=low))]
 outliers=np.setdiff1d(df['height'],df_fil['height'])
 print("THE OUTLIERS IN THE DATA SET height:",outliers)
 ```
+# OUTPUT:
+
  
 ![Screenshot from 2023-03-26 12-57-06](https://user-images.githubusercontent.com/114852180/227761904-52b40b9a-2d29-46e5-9f2c-c068a813dd9a.png)
 
@@ -77,3 +96,7 @@ print("THE OUTLIERS IN THE DATA SET height:",outliers)
 ![Screenshot from 2023-03-26 13-13-20](https://user-images.githubusercontent.com/114852180/227762244-ce9ea4bf-f246-4388-925c-0827534cd2ae.png)
 
 ![Screenshot from 2023-03-26 13-14-40](https://user-images.githubusercontent.com/114852180/227762294-6c55c869-e20e-4a48-85b4-5479461311d5.png)
+
+
+# RESULT:
+thus the experiment executed sucessfully.
